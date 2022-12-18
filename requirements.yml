@@ -1,0 +1,12 @@
+---
+collections:
+  - name: vultr.cloud
+    version: 1.5.0
+
+roles:
+  - name: galaxy.vultr_cloud
+    src: ngine_io.vultr_cloud
+    version: v0.1.0
+  - name: galaxy.nginx
+    src: geerlingguy.nginx
+    version: 3.1.4

@@ -1,0 +1,3 @@
+---
+vultr__instance_firewall_group: "{{ cloud_tier }}-web"
+vultr__instance_enable_ipv6: true

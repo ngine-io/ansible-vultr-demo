@@ -1,0 +1,14 @@
+[production:children]
+cloud
+
+[cloud:children]
+web
+db
+
+[web]
+prod-web1
+prod-web2
+
+[db]
+prod-db1
+prod-db2

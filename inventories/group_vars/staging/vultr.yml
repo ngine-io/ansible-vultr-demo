@@ -1,0 +1,8 @@
+---
+cloud_tier: staging
+
+vultr__region: fra
+
+vultr__vpcs:
+  - name: "{{ cloud_tier }}-vpc"
+    cidr: "10.99.2.0/24"

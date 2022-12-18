@@ -1,0 +1,8 @@
+---
+cloud_tier: prod
+
+vultr__region: ams
+
+vultr__vpcs:
+  - name: "{{ cloud_tier }}-vpc"
+    cidr: "10.99.1.0/24"

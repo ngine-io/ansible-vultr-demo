@@ -1,0 +1,22 @@
+---
+# Vultr API key per tier
+#vultr__api_key: "{{ lookup('ansible.builtin.password', '../secrets/' + cloud_tier + '/vultr_api_key') }}"
+
+vultr__instance_tags:
+  - "tier:{{ cloud_tier }}"
+  - "project:vultr-demo"
+
+vultr__instance_vpcs:
+  - "{{ cloud_tier }}-vpc"
+
+vultr__instance_os: "Debian 11 x64 (bullseye)"
+
+vultr__firewall_groups:
+  - name: "{{ cloud_tier }}-web"
+    rules:
+      - cidr: "0.0.0.0/0"
+        port: "443"
+      - cidr: 0.0.0.0/0
+        port: "80"
+      - cidr: 0.0.0.0/0
+        port: "22"

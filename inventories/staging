@@ -1,0 +1,12 @@
+[staging:children]
+cloud
+
+[cloud:children]
+web
+db
+
+[web]
+staging-web1
+
+[db]
+staging-db1

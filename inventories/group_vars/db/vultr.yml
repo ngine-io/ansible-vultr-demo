@@ -1,0 +1,6 @@
+---
+vultr__instance_block_storages:
+  - "{{ inventory_hostname }}-disk1"
+
+vultr__block_storages:
+  - name: "{{ inventory_hostname }}-disk1"

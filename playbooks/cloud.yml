@@ -1,0 +1,18 @@
+---
+- name: Provision Cloud servers
+  hosts: cloud
+  serial: 5
+  gather_facts: false
+  roles:
+    - role: galaxy.vultr_cloud
+      delegate_to: localhost
+
+  post_tasks:
+    - name: Wait for SSH access
+      delegate_to: localhost
+      ansible.builtin.wait_for:
+        host: "{{ ansible_host }}"
+        port: 22
+        timeout: 1000
+        sleep: 5
+        delay: 5

@@ -9,18 +9,6 @@ In this demo, we are going to show how to use the ngine_io.vultr_cloud role to s
 - Server instances
 - (Optinally with different accounts/api keys)
 
-## Setup
-
-```
-python3.11 -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-
-# refresh venv
-deactivate
-source .venv/bin/activate
-```
-
 ## Install
 
 Clone this repo:
@@ -36,6 +24,19 @@ Install latest vultr collection and vultr role:
 ansible-galaxy collection install -r requirements.yml
 ansible-galaxy role install -r requirements.yml
 ```
+
+## Setup
+
+```
+python3.11 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+
+# refresh venv
+deactivate
+source .venv/bin/activate
+```
+
 
 ## Vultr API Keys
 

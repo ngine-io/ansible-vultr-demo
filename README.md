@@ -18,14 +18,7 @@ git clone git@github.com:ngine-io/ansible-vultr-demo.git
 cd ansible-vultr-demo
 ```
 
-Install latest vultr collection and vultr role:
-
-```
-ansible-galaxy collection install -r requirements.yml
-ansible-galaxy role install -r requirements.yml
-```
-
-## Setup
+Setup Python venv:
 
 ```
 python3.11 -m venv .venv
@@ -37,6 +30,12 @@ deactivate
 source .venv/bin/activate
 ```
 
+Install latest Vultr collection and role:
+
+```
+ansible-galaxy collection install -r requirements.yml
+ansible-galaxy role install -r requirements.yml
+```
 
 ## Vultr API Keys
 

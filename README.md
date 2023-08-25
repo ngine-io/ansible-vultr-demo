@@ -7,7 +7,7 @@ In this demo, we are going to show how to use the ngine_io.vultr_cloud role to s
 - Block Storage
 - Firewall groups and rules
 - Server instances
-- (Optinally with different accounts/api keys)
+- (Optionally with different accounts/api keys)
 
 ## Install
 
